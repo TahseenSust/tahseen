@@ -1,0 +1,55 @@
+export const EXPERIENCES = [
+  {
+    company: "Oak Network",
+    role: "Software Engineer L2",
+    period: "June 2025 – Present",
+    location: "Remote, New York, USA",
+    description: [
+      "Built scalable payment orchestration systems for crowdfunding and secure transaction workflows.",
+      "Built and maintained core payment APIs using Node.js, RabbitMQ, and PostgreSQL.",
+      "Improved system performance by resolving a major bottleneck and increasing rate-limit handling capacity by 10x.",
+      "Added end-to-end logging, monitoring, metrics, and Grafana-based observability.",
+      "Developed a developer-friendly SDK with strong unit and integration test coverage.",
+    ],
+  },
+  {
+    company: "Agrihand AI",
+    role: "Founding Engineer / Software Engineer",
+    period: "May 2024 – May 2025",
+    location: "Remote, Wyoming, USA",
+    description: [
+      "Designed high-level architecture for scalable AI systems.",
+      "Built LangGraph-based agentic AI workflows with self-directed decision-making.",
+      "Developed AI-powered backend systems using FastAPI and LangChain.",
+      "Implemented RAG with ChromaDB and hybrid search to improve retrieval accuracy.",
+      "Applied prompt engineering and domain-specific AI optimization.",
+      "Built a responsive React Native interface for real-time interaction and visualization.",
+    ],
+  },
+  {
+    company: "Daricomma Ltd.",
+    role: "Founding Engineer / Software Engineer",
+    period: "March 2023 – April 2024",
+    location: "Sylhet, Bangladesh",
+    description: [
+      "Designed and built RESTful APIs with NestJS.",
+      "Developed responsive frontend systems with Next.js and Tailwind CSS.",
+      "Improved database performance and schema quality in PostgreSQL.",
+      "Integrated GraphQL for improved data access.",
+      "Built CI/CD pipelines with GitHub Actions, Docker, and AWS.",
+      "Reduced production bugs and deployment time through engineering improvements.",
+    ],
+  },
+  {
+    company: "Inverse AI",
+    role: "Software Engineer",
+    period: "September 2021 – September 2022",
+    location: "Sylhet, Bangladesh",
+    description: [
+      "Worked on semantic segmentation data pipelines and model training workflows.",
+      "Built ML-driven product features for a photo editing application.",
+      "Used machine learning, geometry, and algorithmic techniques in product development.",
+      "Contributed to engineering collaboration, reviews, and technical support.",
+    ],
+  },
+];
