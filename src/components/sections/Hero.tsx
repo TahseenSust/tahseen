@@ -76,7 +76,7 @@ export function Hero() {
             <Linkedin className="h-5 w-5" />
             <span className="sr-only">LinkedIn</span>
           </a>
-          <a href="https://github.com/tahseenchowdhury" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors p-2 rounded-full hover:bg-muted/50">
+          <a href="https://github.com/TahseenSust" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors p-2 rounded-full hover:bg-muted/50">
             <Github className="h-5 w-5" />
             <span className="sr-only">GitHub</span>
           </a>

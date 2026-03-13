@@ -7,7 +7,7 @@ export function Footer() {
         <p>© {currentYear} Tahseen Rasheed Chowdhury. All rights reserved.</p>
         <div className="flex items-center gap-4">
           <a
-            href="https://github.com/tahseenchowdhury"
+            href="https://github.com/TahseenSust"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-foreground transition-colors"
