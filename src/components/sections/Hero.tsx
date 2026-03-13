@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/Button"
 
 export function Hero() {
   return (
-    <Section id="hero" className="min-h-[90vh] pb-0 pt-24 md:pt-32">
+    <Section id="hero" className="min-h-screen pb-0 pt-24 md:pt-32">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
