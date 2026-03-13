@@ -25,7 +25,7 @@ export function Header() {
     >
       <div className="text-sm font-medium tracking-tight text-foreground">
         <a href="#hero" className="hover:opacity-80 transition-opacity">
-          TC<span className="text-muted-foreground">.</span>
+          Tahseen<span className="text-muted-foreground">.</span>
         </a>
       </div>
       <nav className="hidden md:flex items-center gap-6 text-sm text-muted-foreground">
