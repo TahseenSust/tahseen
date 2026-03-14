@@ -8,7 +8,7 @@ import { MapPin } from "lucide-react"
 
 export function Experience() {
   return (
-    <Section id="experience">
+    <Section id="experience" className="bg-muted/30">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -46,7 +46,7 @@ export function Experience() {
                     </p>
                   </div>
                 </div>
-                
+
                 <ul className="space-y-3">
                   {exp.description.map((item, i) => (
                     <li key={i} className="text-muted-foreground text-sm flex gap-3">

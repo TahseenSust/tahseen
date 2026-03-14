@@ -33,7 +33,7 @@ const SKILL_GROUPS = [
 
 export function Skills() {
   return (
-    <Section id="skills" className="bg-muted/30">
+    <Section id="skills">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

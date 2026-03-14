@@ -7,7 +7,7 @@ import { GraduationCap } from "lucide-react"
 
 export function Education() {
   return (
-    <Section id="education">
+    <Section id="education" className="bg-muted/30">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -47,7 +47,7 @@ export function Education() {
                 </div>
               </div>
             </div>
-            
+
             <div className="pt-4 mt-6 border-t border-border">
               <h6 className="text-sm font-medium mb-3 text-foreground/80">Key Activities & Leadership</h6>
               <ul className="space-y-3">

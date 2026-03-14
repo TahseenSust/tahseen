@@ -16,16 +16,16 @@ export function About() {
         <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
           About
         </h3>
-        
-        <div className="prose prose-neutral dark:prose-invert text-lg leading-relaxed text-foreground max-w-3xl">
+
+        <div className="prose prose-neutral dark:prose-invert max-w-3xl text-lg leading-relaxed text-foreground">
           <p>
-            I am a software engineer with cross-disciplinary experience across backend engineering, full-stack product development, AI systems, machine learning, and developer tooling. 
+            I am a software engineer working across backend systems, AI applications, full-stack product development, and applied machine learning. My work is centered on building reliable software that is technically strong, practical to use, and ready for real-world deployment.
           </p>
           <p className="mt-4">
-            My work spans building critical components like payment orchestration systems that handle high transaction volumes securely, designing RAG pipelines of LangGraph-based agentic workflows, engineering full-stack web platforms, and developing semantic segmentation pipelines. I have architected and deployed scalable cloud solutions that solve real business problems.
+            Over time, I have worked on a wide range of systems, including payment orchestration infrastructure, retrieval-augmented generation pipelines, LangGraph-based agent workflows, full-stack web platforms, and computer vision pipelines such as semantic segmentation. I enjoy moving between system design, implementation, and product thinking to turn complex ideas into usable software.
           </p>
           <p className="mt-4">
-            I am deeply interested in the intersection of software engineering, machine learning, security, and the practical, everyday applications of artificial intelligence. I focus on writing clean, tested, and maintainable code to build systems that scale gracefully.
+            I am especially interested in the intersection of software engineering, machine learning, security, and trustworthy AI. I care about building systems that are scalable, maintainable, and thoughtfully engineered, with clean architecture, strong testing practices, and long-term usability in mind.
           </p>
         </div>
       </motion.div>

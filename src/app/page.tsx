@@ -10,6 +10,7 @@ import { Education } from "@/components/sections/Education"
 import { Achievements } from "@/components/sections/Achievements"
 import { Community } from "@/components/sections/Community"
 import { Contact } from "@/components/sections/Contact"
+import { Interests } from "@/components/sections/Interest"
 
 export default function Home() {
   return (
@@ -19,12 +20,13 @@ export default function Home() {
         <div className="w-full">
           <Hero />
           <About />
+          <Interests />
           <Experience />
           <Expertise />
-          <Research />
-          <Skills />
           <Education />
+          <Research />
           <Achievements />
+          <Skills />
           <Community />
           <Contact />
         </div>
