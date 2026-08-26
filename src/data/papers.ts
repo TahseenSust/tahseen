@@ -30,4 +30,15 @@ export const PAPERS = [
       "Showed that the barrier to deeper networks was optimization rather than capacity, and that letting layers fit a residual instead of a full mapping makes hundreds of layers trainable. I keep it here because the identity shortcut turned out to be a general architectural idea, not a vision-only trick.",
     tags: ["Deep Learning", "Computer Vision", "Architectures"],
   },
+  {
+    title: "Attention Is All You Need",
+    authors:
+      "Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kaiser, Illia Polosukhin",
+    venue: "NeurIPS",
+    year: "2017",
+    url: "https://arxiv.org/pdf/1706.03762",
+    note:
+      "Took the attention mechanism from a supplement to recurrence and made it the entire model. Dropping the recurrent path removed the sequential dependency in training and made self-attention the default way to model long-range structure, which is why it sits at the end of this line of papers rather than beside them.",
+    tags: ["Attention", "Transformers", "NLP"],
+  },
 ]
