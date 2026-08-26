@@ -1,58 +1,49 @@
-"use client"
-
-import { motion } from "framer-motion"
-import { Section } from "@/components/ui/Section"
-import { Button } from "@/components/ui/Button"
-import { Mail } from "lucide-react"
+import { Github, Linkedin, Mail } from "lucide-react"
+import { Section, SectionHeading } from "@/components/ui/Section"
 import { contactData } from "@/data/contact"
 
 export function Contact() {
   return (
-    <Section
-      id="contact"
-      className="min-h-[70vh] items-center justify-center text-center"
-    >
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.6 }}
-        className="mx-auto flex max-w-2xl flex-col items-center space-y-8"
-      >
-        <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-primary/5 text-primary">
-          <Mail className="h-8 w-8" />
-        </div>
+    <Section id="contact">
+      <SectionHeading label="Contact" />
 
-        <div className="space-y-4">
-          <h2 className="text-4xl font-semibold tracking-tight md:text-5xl">
-            Let’s connect
-          </h2>
+      <div className="rounded-xl border border-border/60 bg-muted/30 p-5">
+        <p className="max-w-2xl text-sm leading-6 text-muted-foreground">
+          I&apos;m glad to hear from faculty and researchers about graduate
+          study, research collaboration, or engineering work in machine
+          learning, software security, and AI systems. The fastest way to reach
+          me is email.
+        </p>
 
-          <p className="text-lg leading-relaxed text-muted-foreground">
-            I’m always open to thoughtful conversations around software engineering, AI systems,
-            machine learning, security, and impactful technical work. If you’d like to discuss
-            a collaboration, research, or an engineering opportunity, I’d be glad to connect.
-          </p>
-        </div>
+        <a
+          href={`mailto:${contactData.email}`}
+          className="mt-4 inline-flex items-center gap-2 text-lg font-medium text-foreground underline decoration-accent/40 underline-offset-8 transition-colors hover:text-accent"
+        >
+          <Mail className="h-4 w-4" />
+          {contactData.email}
+        </a>
 
-        <div className="flex flex-col items-center gap-y-4">
+        <div className="mt-4 flex flex-wrap gap-4 text-sm text-muted-foreground">
           <a
-            href={`mailto:${contactData.email}`}
-            className="text-2xl font-medium text-foreground underline decoration-primary/30 underline-offset-8 transition-colors hover:text-primary md:text-3xl"
+            href={contactData.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 transition-colors hover:text-foreground"
           >
-            {contactData.email}
+            <Linkedin className="h-4 w-4" />
+            LinkedIn
           </a>
-
-          <a href={`mailto:${contactData.email}`} className="inline-block">
-            <Button
-              size="lg"
-              className="h-12 cursor-pointer rounded-full px-8 text-base"
-            >
-              Get in Touch
-            </Button>
+          <a
+            href={contactData.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 transition-colors hover:text-foreground"
+          >
+            <Github className="h-4 w-4" />
+            GitHub
           </a>
         </div>
-      </motion.div>
+      </div>
     </Section>
   )
 }

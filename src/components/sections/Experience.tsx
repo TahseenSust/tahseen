@@ -1,65 +1,62 @@
-"use client"
-
-import { motion } from "framer-motion"
-import { Section } from "@/components/ui/Section"
-import { Card } from "@/components/ui/Card"
+import { Section, SectionHeading } from "@/components/ui/Section"
 import { EXPERIENCES } from "@/data/experience"
-import { MapPin } from "lucide-react"
+import { EXPERTISE } from "@/data/expertise"
 
 export function Experience() {
   return (
-    <Section id="experience" className="bg-muted/30">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.6 }}
-        className="space-y-12"
-      >
-        <div className="space-y-2">
-          <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
-            Experience
-          </h3>
-          <h2 className="text-3xl font-semibold tracking-tight">Work History</h2>
-        </div>
+    <Section id="experience">
+      <SectionHeading
+        label="Experience"
+        description="Four years building production systems across backend infrastructure, AI applications, and applied machine learning."
+      />
 
-        <div className="space-y-6">
-          {EXPERIENCES.map((exp, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-            >
-              <Card className="p-6 md:p-8 hover:-translate-y-1 transition-transform duration-300">
-                <div className="flex flex-col md:flex-row md:items-start justify-between gap-4 mb-6">
-                  <div>
-                    <h4 className="text-xl font-semibold">{exp.role}</h4>
-                    <p className="font-medium text-primary/80 mt-1">{exp.company}</p>
-                  </div>
-                  <div className="text-sm text-muted-foreground md:text-right shrink-0">
-                    <p className="font-medium">{exp.period}</p>
-                    <p className="flex items-center gap-1 mt-1 md:justify-end">
-                      <MapPin className="h-3 w-3" />
-                      {exp.location}
-                    </p>
-                  </div>
-                </div>
+      <div className="mb-8 grid gap-x-6 gap-y-3 sm:grid-cols-2 lg:grid-cols-3">
+        {EXPERTISE.map((exp) => {
+          const Icon = exp.icon
 
-                <ul className="space-y-3">
-                  {exp.description.map((item, i) => (
-                    <li key={i} className="text-muted-foreground text-sm flex gap-3">
-                      <span className="text-primary/40 mt-1.5 shrink-0 block w-1.5 h-1.5 rounded-full bg-current" />
-                      <span className="leading-relaxed">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </Card>
-            </motion.div>
-          ))}
-        </div>
-      </motion.div>
+          return (
+            <div key={exp.title} className="flex items-start gap-2.5">
+              <Icon className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
+              <span className="text-sm leading-snug text-foreground">
+                {exp.title}
+              </span>
+            </div>
+          )
+        })}
+      </div>
+
+      <div className="space-y-6 border-l border-border pl-5">
+        {EXPERIENCES.map((exp) => (
+          <div key={exp.company} className="relative">
+            <span
+              aria-hidden
+              className="absolute -left-[26px] top-1.5 block h-2 w-2 rounded-full border-2 border-background bg-accent"
+            />
+
+            <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-0.5">
+              <h3 className="text-base font-semibold text-foreground">
+                {exp.role}
+                <span className="font-normal text-muted-foreground">
+                  {" "}
+                  · {exp.company}
+                </span>
+              </h3>
+              <span className="text-xs text-muted-foreground">
+                {exp.period} · {exp.location}
+              </span>
+            </div>
+
+            <ul className="mt-2 space-y-1 text-sm leading-6 text-muted-foreground">
+              {exp.description.map((item) => (
+                <li key={item} className="flex gap-2.5">
+                  <span className="mt-2.5 block h-1 w-1 shrink-0 rounded-full bg-border" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
     </Section>
   )
 }

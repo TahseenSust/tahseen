@@ -10,8 +10,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Tahseen | AI & Software Engineer",
-  description: "Portfolio of Tahseen Rasheed Chowdhury - Software Engineer focused on scalable backend systems, AI applications, and product engineering.",
+  title: "Tahseen Rasheed Chowdhury | Software Engineer & Prospective Researcher",
+  description:
+    "Tahseen Rasheed Chowdhury — software engineer working on AI systems, backend infrastructure, and applied machine learning, with research interests in ML for vulnerability detection, model security, and trustworthy AI.",
 };
 
 export default function RootLayout({

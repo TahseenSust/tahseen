@@ -1,34 +1,51 @@
-"use client"
-
-import { motion } from "framer-motion"
 import { Section } from "@/components/ui/Section"
+
+const AT_A_GLANCE = [
+  { value: "B.Sc. SWE", label: "SUST, 2023" },
+  { value: "4+ yrs", label: "Software engineering" },
+  { value: "300+", label: "Students trained" },
+  { value: "ICPC 21st", label: "Dhaka Regional 2019" },
+]
 
 export function About() {
   return (
-    <Section id="about" className="bg-muted/30">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.6 }}
-        className="space-y-8"
-      >
-        <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
-          About
-        </h3>
+    <Section id="about">
+      <h1 className="max-w-2xl text-2xl font-semibold leading-snug tracking-tight text-foreground sm:text-3xl">
+        Building AI and backend systems, and studying how to make machine
+        learning secure and dependable.
+      </h1>
 
-        <div className="prose prose-neutral dark:prose-invert max-w-3xl text-lg leading-relaxed text-foreground">
-          <p>
-            I am a software engineer working across backend systems, AI applications, full-stack product development, and applied machine learning. My work is centered on building reliable software that is technically strong, practical to use, and ready for real-world deployment.
-          </p>
-          <p className="mt-4">
-            Over time, I have worked on a wide range of systems, including payment orchestration infrastructure, retrieval-augmented generation pipelines, LangGraph-based agent workflows, full-stack web platforms, and computer vision pipelines such as semantic segmentation. I enjoy moving between system design, implementation, and product thinking to turn complex ideas into usable software.
-          </p>
-          <p className="mt-4">
-            I am especially interested in the intersection of software engineering, machine learning, security, and trustworthy AI. I care about building systems that are scalable, maintainable, and thoughtfully engineered, with clean architecture, strong testing practices, and long-term usability in mind.
-          </p>
-        </div>
-      </motion.div>
+      <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-4 border-y border-border/60 py-5 sm:grid-cols-4">
+        {AT_A_GLANCE.map((stat) => (
+          <div key={stat.label}>
+            <p className="text-base font-semibold tracking-tight text-foreground">
+              {stat.value}
+            </p>
+            <p className="mt-0.5 text-xs leading-snug text-muted-foreground">
+              {stat.label}
+            </p>
+          </div>
+        ))}
+      </div>
+
+      <div className="mt-6 max-w-2xl space-y-4 text-sm leading-6 text-muted-foreground">
+        <p>
+          I am a software engineer working across backend systems, AI
+          applications, full-stack product development, and applied machine
+          learning. I have built payment orchestration infrastructure,
+          retrieval-augmented generation pipelines, LangGraph-based agent
+          workflows, full-stack web platforms, and computer vision pipelines
+          such as semantic segmentation.
+        </p>
+        <p>
+          My research interest sits at the intersection of software engineering,
+          machine learning, and security — particularly machine learning for
+          vulnerability detection, and the robustness and trustworthiness of
+          deployed models. I care about systems that are scalable and
+          maintainable, with clean architecture, strong testing practices, and
+          long-term usability in mind.
+        </p>
+      </div>
     </Section>
   )
 }

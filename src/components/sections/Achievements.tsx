@@ -1,9 +1,4 @@
-"use client"
-
-import { motion } from "framer-motion"
-import { Section } from "@/components/ui/Section"
-import { Card } from "@/components/ui/Card"
-import { Award, Trophy } from "lucide-react"
+import { Section, SectionHeading } from "@/components/ui/Section"
 
 const achievements = [
   "ICPC Dhaka Regional 2019 — Ranked 21st",
@@ -16,62 +11,63 @@ const achievements = [
   "SUST Techfest 2019 — Ranked 16th",
 ]
 
+const ratings = [
+  {
+    label: "Codeforces",
+    value: "1626 max",
+    href: "https://codeforces.com/profile/Tahseen",
+  },
+  {
+    label: "CodeChef",
+    value: "1941 max",
+    href: "https://www.codechef.com/users/tahseen_syl",
+  },
+  {
+    label: "UVA",
+    value: "~600 solved",
+    href: "https://uhunt.onlinejudge.org/id/646297",
+  },
+  {
+    label: "LightOJ",
+    value: "~250 solved",
+    href: "https://lightoj.com/user/tahseenrchow",
+  },
+]
+
 export function Achievements() {
   return (
-    <Section id="achievements" className="bg-muted/30">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.6 }}
-        className="space-y-12"
-      >
-        <div className="space-y-3 max-w-3xl">
-          <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
-            Achievements
-          </h3>
-          <h2 className="text-3xl font-semibold tracking-tight">
-            Competitive Programming
-          </h2>
-          <p className="text-lg leading-relaxed text-muted-foreground">
-            Competitive programming has played a strong role in shaping my
-            problem-solving approach, algorithmic thinking, and ability to work
-            through complex technical challenges.
-          </p>
-        </div>
+    <Section id="achievements">
+      <SectionHeading
+        label="Competitive Programming"
+        description="Contest work that shaped my algorithmic thinking and problem-solving approach."
+      />
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="max-w-3xl"
-        >
-          <Card>
-            <div className="mb-6 flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/5 text-primary">
-                <Trophy className="h-5 w-5" />
-              </div>
-              <h4 className="text-xl font-semibold">Selected Achievements</h4>
-            </div>
+      <div className="grid gap-x-6 gap-y-1.5 sm:grid-cols-2">
+        {achievements.map((item) => (
+          <div
+            key={item}
+            className="flex gap-2.5 text-sm leading-6 text-muted-foreground"
+          >
+            <span className="mt-2.5 block h-1 w-1 shrink-0 rounded-full bg-accent" />
+            <span>{item}</span>
+          </div>
+        ))}
+      </div>
 
-            <ul className="space-y-3">
-              {achievements.map((item, i) => (
-                <li key={i} className="flex gap-3 text-sm leading-6 text-foreground">
-                  <Award className="mt-1 h-4 w-4 shrink-0 text-primary/60" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-
-            <p className="mt-6 border-t border-border pt-4 text-sm leading-relaxed text-muted-foreground">
-              Also active on online judges, with a <u><a href="https://codeforces.com/profile/Tahseen" target="_blank" rel="noopener noreferrer">Codeforces</a></u> max rating of 1626,
-              a <u><a href="https://www.codechef.com/users/tahseen_syl" target="_blank" rel="noopener noreferrer">CodeChef</a></u>  max rating of 1941, around 250 problems solved on <u><a href="https://lightoj.com/user/tahseenrchow" target="_blank" rel="noopener noreferrer">LightOJ</a></u>,
-              and around 600 problems solved on <u><a href="https://uhunt.onlinejudge.org/id/646297" target="_blank" rel="noopener noreferrer">UVA</a></u>.
-            </p>
-          </Card>
-        </motion.div>
-      </motion.div>
+      <div className="mt-5 flex flex-wrap gap-2 border-t border-border/60 pt-4">
+        {ratings.map((rating) => (
+          <a
+            key={rating.label}
+            href={rating.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full border border-border px-3 py-1 text-xs text-muted-foreground transition-colors hover:border-accent/40 hover:text-foreground"
+          >
+            <span className="font-medium text-foreground">{rating.label}</span>{" "}
+            {rating.value}
+          </a>
+        ))}
+      </div>
     </Section>
   )
 }
