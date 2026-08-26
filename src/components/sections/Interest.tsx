@@ -1,30 +1,30 @@
-import { Blocks, BrainCircuit, Bug, Shield } from "lucide-react"
+import { Atom, Blocks, BrainCircuit, Layers } from "lucide-react"
 import { Section, SectionHeading } from "@/components/ui/Section"
 
 const interests = [
     {
-        title: "ML for Vulnerability Detection",
+        title: "Applied AI/ML Across Domains",
         description:
-            "Applying machine learning to detect software vulnerabilities, uncover defects, and strengthen software quality and security.",
-        icon: Bug,
+            "Applying machine learning to problems across domains — including vulnerability detection, defect discovery, and software quality — and to other areas where learned models change how the work is done.",
+        icon: Layers,
     },
     {
-        title: "ML Model Security & Trustworthiness",
+        title: "Machine Learning Security",
         description:
-            "Security risks of machine learning systems: robustness, misuse, and the dependable deployment of models in real-world settings.",
+            "Security of machine learning systems: robustness, misuse, and the dependable deployment of models in real-world settings.",
         icon: BrainCircuit,
-    },
-    {
-        title: "Application Security",
-        description:
-            "Vulnerability analysis and techniques for identifying and understanding weaknesses in software systems.",
-        icon: Shield,
     },
     {
         title: "Model Orchestration",
         description:
             "Orchestration systems where multiple models coordinate, interact, and share information to address complex tasks.",
         icon: Blocks,
+    },
+    {
+        title: "Emerging Technologies",
+        description:
+            "Open to working beyond these areas, including quantum computing and other emerging technologies that reshape how systems are built.",
+        icon: Atom,
     },
 ]
 
@@ -33,7 +33,7 @@ export function Interests() {
         <Section id="interests">
             <SectionHeading
                 label="Research Interests"
-                description="Where I want to do graduate-level work: intelligent systems that are reliable, secure, and practically useful."
+                description="Where I want to do graduate-level work: intelligent systems that are reliable, secure, and practically useful — and emerging areas that change what can be built."
             />
 
             <div className="grid gap-3 sm:grid-cols-2">

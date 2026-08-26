@@ -38,9 +38,9 @@ export function Sidebar() {
         </div>
 
         <p className="mt-5 max-w-sm text-sm leading-6 text-muted-foreground">
-          I build production AI and backend systems, and I&apos;m pursuing
-          research at the intersection of machine learning, software security,
-          and trustworthy model deployment.
+          I build production AI and backend systems, with research interests at
+          the intersection of software engineering, machine learning, and
+          security.
         </p>
 
         <nav
