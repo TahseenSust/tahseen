@@ -30,6 +30,7 @@ export function Header() {
       </div>
       <nav className="hidden md:flex items-center gap-6 text-sm text-muted-foreground">
         <a href="#about" className="hover:text-foreground transition-colors">About</a>
+        <a href="#paper-shelf" className="hover:text-foreground transition-colors">Paper Shelf</a>
         <a href="#experience" className="hover:text-foreground transition-colors">Experience</a>
         <a href="#research" className="hover:text-foreground transition-colors">Research</a>
         <a href="#contact" className="hover:text-foreground transition-colors">Contact</a>

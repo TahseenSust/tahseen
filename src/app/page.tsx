@@ -2,6 +2,7 @@ import { Header } from "@/components/ui/Header"
 import { Footer } from "@/components/ui/Footer"
 import { Hero } from "@/components/sections/Hero"
 import { About } from "@/components/sections/About"
+import { PaperShelf } from "@/components/sections/PaperShelf"
 import { Experience } from "@/components/sections/Experience"
 import { Expertise } from "@/components/sections/Expertise"
 import { Research } from "@/components/sections/Research"
@@ -20,6 +21,7 @@ export default function Home() {
         <div className="w-full">
           <Hero />
           <About />
+          <PaperShelf />
           <Interests />
           <Experience />
           <Expertise />
