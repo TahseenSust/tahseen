@@ -1,4 +1,14 @@
-export const PAPERS = [
+export interface Paper {
+  title: string
+  authors: string
+  venue: string
+  year: string
+  url: string
+  note: string
+  tags: string[]
+}
+
+export const PAPERS: Paper[] = [
   {
     title: "Sequence to Sequence Learning with Neural Networks",
     authors: "Ilya Sutskever, Oriol Vinyals, Quoc V. Le",
