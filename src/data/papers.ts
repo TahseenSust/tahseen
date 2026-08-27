@@ -62,4 +62,15 @@ export const PAPERS: Paper[] = [
       "Took the Transformer encoder and asked what it could learn without a translation objective at all. Masked language modeling lets every token condition on both directions at once, and the result was that a single pre-trained model could be fine-tuned across tasks instead of designing an architecture per task. I keep it after the Transformer paper because it marks the shift from architectures to pre-training as the thing that carries the performance.",
     tags: ["Transformers", "NLP", "Pre-training"],
   },
+  {
+    title: "Language Models are Unsupervised Multitask Learners",
+    authors:
+      "Alec Radford, Jeffrey Wu, Rewon Child, David Luan, Dario Amodei, Ilya Sutskever",
+    venue: "OpenAI Technical Report",
+    year: "2019",
+    url: "https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf",
+    note:
+      "The other answer to the same question BERT asked, and the reason I keep the two together. Rather than pre-train and then fine-tune per task, GPT-2 treats the tasks themselves as text and shows a plain language-modeling objective at scale can perform them zero-shot. It is where capability starts coming from scale and framing rather than task-specific supervision.",
+    tags: ["Transformers", "NLP", "Language Models"],
+  },
 ]
