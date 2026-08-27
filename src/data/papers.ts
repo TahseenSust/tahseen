@@ -41,4 +41,15 @@ export const PAPERS = [
       "Took the attention mechanism from a supplement to recurrence and made it the entire model. Dropping the recurrent path removed the sequential dependency in training and made self-attention the default way to model long-range structure, which is why it sits at the end of this line of papers rather than beside them.",
     tags: ["Attention", "Transformers", "NLP"],
   },
+  {
+    title:
+      "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+    authors: "Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova",
+    venue: "NAACL",
+    year: "2019",
+    url: "https://arxiv.org/pdf/1810.04805",
+    note:
+      "Took the Transformer encoder and asked what it could learn without a translation objective at all. Masked language modeling lets every token condition on both directions at once, and the result was that a single pre-trained model could be fine-tuned across tasks instead of designing an architecture per task. I keep it after the Transformer paper because it marks the shift from architectures to pre-training as the thing that carries the performance.",
+    tags: ["Transformers", "NLP", "Pre-training"],
+  },
 ]
