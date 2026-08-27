@@ -73,4 +73,26 @@ export const PAPERS: Paper[] = [
       "The other answer to the same question BERT asked, and the reason I keep the two together. Rather than pre-train and then fine-tune per task, GPT-2 treats the tasks themselves as text and shows a plain language-modeling objective at scale can perform them zero-shot. It is where capability starts coming from scale and framing rather than task-specific supervision.",
     tags: ["Transformers", "NLP", "Language Models"],
   },
+  {
+    title:
+      "You Get What You Chat: Using Conversations to Personalize Search-based Recommendations",
+    authors: "Ghazaleh H. Torbati, Andrew Yates, Gerhard Weikum",
+    venue: "ECIR",
+    year: "2021",
+    url: "https://arxiv.org/pdf/2109.04716",
+    note:
+      "Builds a user model out of ordinary conversation instead of ratings or questionnaires, then uses it to re-rank entity answers across books, travel, and food. I keep it because it treats unstructured chat as a legitimate source of preference signal, and because the comparison against questionnaire-derived profiles is an honest measurement of how much that signal is actually worth.",
+    tags: ["Information Retrieval", "Recommender Systems", "Personalization"],
+  },
+  {
+    title: "Large Language Models as Zero-Shot Conversational Recommenders",
+    authors:
+      "Zhankui He, Zhouhang Xie, Rahul Jha, Harald Steck, Dawen Liang, Yesu Feng, Bodhisattwa Prasad Majumder, Nathan Kallus, Julian McAuley",
+    venue: "CIKM",
+    year: "2023",
+    url: "https://arxiv.org/pdf/2308.10053",
+    note:
+      "The point where the zero-shot framing from GPT-2 meets the recommendation setting: an untuned language model, given conversations collected in the wild, beats systems trained for the task. What keeps it on the shelf is the probing analysis rather than the headline — the paper works to separate genuine capability from what the model already saw during pre-training, which is the question I want asked whenever a general model outperforms a specialized one.",
+    tags: ["Language Models", "Recommender Systems", "Evaluation"],
+  },
 ]
