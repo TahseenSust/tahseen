@@ -95,4 +95,14 @@ export const PAPERS: Paper[] = [
       "The point where the zero-shot framing from GPT-2 meets the recommendation setting: an untuned language model, given conversations collected in the wild, beats systems trained for the task. What keeps it on the shelf is the probing analysis rather than the headline — the paper works to separate genuine capability from what the model already saw during pre-training, which is the question I want asked whenever a general model outperforms a specialized one.",
     tags: ["Language Models", "Recommender Systems", "Evaluation"],
   },
+  {
+    title: "Harnessing the Universal Geometry of Embeddings",
+    authors: "Rishi Jha, Collin Zhang, Vitaly Shmatikov, John X. Morris",
+    venue: "NeurIPS",
+    year: "2025",
+    url: "https://arxiv.org/pdf/2505.12540",
+    note:
+      "Makes the Platonic Representation Hypothesis constructive for text embeddings: vec2vec learns to translate between incompatible embedding spaces without paired examples or access to the original encoder. I keep it here for both the geometric result and the security lesson — a vector database alone can reveal sensitive properties of the documents behind it.",
+    tags: ["Embeddings", "Representation Learning", "Security"],
+  },
 ]
