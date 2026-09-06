@@ -126,4 +126,15 @@ export const PAPERS: Paper[] = [
       "Makes the Platonic Representation Hypothesis constructive for text embeddings: vec2vec learns to translate between incompatible embedding spaces without paired examples or access to the original encoder. I keep it here for both the geometric result and the security lesson — a vector database alone can reveal sensitive properties of the documents behind it.",
     tags: ["Embeddings", "Representation Learning", "Security"],
   },
+  {
+    title: "Memory Caching: RNNs with Growing Memory",
+    authors:
+      "Ali Behrouz, Zeman Li, Yuan Deng, Peilin Zhong, Meisam Razaviyayn, Vahab Mirrokni",
+    venue: "arXiv preprint",
+    year: "2026",
+    url: "https://arxiv.org/pdf/2602.24281",
+    note:
+      "Asks whether recurrent models have to choose between efficient fixed-size state and the Transformer’s expensive growing memory. Memory Caching saves checkpoints of recurrent state and selectively combines them later, creating a controllable middle ground between linear recurrence and quadratic attention. I keep it for that framing: memory capacity is an architectural dial, not just a side effect of the model family.",
+    tags: ["Sequence Models", "RNNs", "Long Context"],
+  },
 ]
