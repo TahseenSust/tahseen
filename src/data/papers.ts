@@ -74,6 +74,27 @@ export const PAPERS: Paper[] = [
     tags: ["Transformers", "NLP", "Language Models"],
   },
   {
+    title: "Language Models are Few-Shot Learners",
+    authors: "Tom B. Brown et al.",
+    venue: "NeurIPS",
+    year: "2020",
+    url: "https://arxiv.org/pdf/2005.14165",
+    note:
+      "GPT-3 turned scale into a practical argument for prompting: the same frozen language model could take a task description and a handful of examples in its context, then continue with the new task without gradient updates. I keep it because it made in-context learning impossible to dismiss, while also documenting the contamination, reliability, and societal questions that scale brings with it.",
+    tags: ["Language Models", "In-context Learning", "Scaling"],
+  },
+  {
+    title: "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
+    authors:
+      "Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg Heigold, Sylvain Gelly, Jakob Uszkoreit, Neil Houlsby",
+    venue: "ICLR",
+    year: "2021",
+    url: "https://arxiv.org/pdf/2010.11929",
+    note:
+      "The paper that made the Transformer feel native to vision: split an image into fixed-size patches, treat them as a token sequence, and let a standard encoder model their relationships. Its result is especially useful as a lesson in scale — with sufficiently large pre-training data, a model with far less image-specific bias can match or surpass the CNNs that had defined the field.",
+    tags: ["Transformers", "Computer Vision", "Pre-training"],
+  },
+  {
     title:
       "You Get What You Chat: Using Conversations to Personalize Search-based Recommendations",
     authors: "Ghazaleh H. Torbati, Andrew Yates, Gerhard Weikum",
