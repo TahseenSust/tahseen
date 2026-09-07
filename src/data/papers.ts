@@ -74,6 +74,17 @@ export const PAPERS: Paper[] = [
     tags: ["Transformers", "NLP", "Language Models"],
   },
   {
+    title: "Scaling Laws for Neural Language Models",
+    authors:
+      "Jared Kaplan, Sam McCandlish, Tom Henighan, Tom B. Brown, Benjamin Chess, Rewon Child, Scott Gray, Alec Radford, Jeffrey Wu, Dario Amodei",
+    venue: "arXiv preprint",
+    year: "2020",
+    url: "https://arxiv.org/pdf/2001.08361",
+    note:
+      "Made scaling a measurable engineering discipline. Across wide ranges of model size, data, and compute, language-model loss followed smooth power laws, turning the question from whether scale matters into how to allocate a fixed budget. I keep it next to GPT-3 because its compute-optimal prescription — favor much larger models and stop well before convergence — explains the bet that paper was making.",
+    tags: ["Scaling Laws", "Language Models", "Compute"],
+  },
+  {
     title: "Language Models are Few-Shot Learners",
     authors: "Tom B. Brown et al.",
     venue: "NeurIPS",
