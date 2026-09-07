@@ -137,4 +137,14 @@ export const PAPERS: Paper[] = [
       "Asks whether recurrent models have to choose between efficient fixed-size state and the Transformer’s expensive growing memory. Memory Caching saves checkpoints of recurrent state and selectively combines them later, creating a controllable middle ground between linear recurrence and quadratic attention. I keep it for that framing: memory capacity is an architectural dial, not just a side effect of the model family.",
     tags: ["Sequence Models", "RNNs", "Long Context"],
   },
+  {
+    title: "Visual General Intelligence: A White Paper",
+    authors: "Hirokatsu Kataoka et al.",
+    venue: "arXiv preprint",
+    year: "2026",
+    url: "https://arxiv.org/pdf/2608.25924",
+    note:
+      "A useful intervention against treating language as the only route to general intelligence. Rather than argue for one definition or architecture, the paper maps the questions visual systems need to answer — spanning video, geometry, generation, continual learning, embodiment, and evaluation — if visual experience is to produce genuinely transferable capabilities. I keep it as an agenda-setting complement to the model papers on this shelf.",
+    tags: ["Computer Vision", "Foundation Models", "Visual Intelligence"],
+  },
 ]
