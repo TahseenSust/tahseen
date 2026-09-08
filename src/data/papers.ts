@@ -138,6 +138,18 @@ export const PAPERS: Paper[] = [
     tags: ["Embeddings", "Representation Learning", "Security"],
   },
   {
+    title:
+      "LLM-based Conversational Recommendation Agents with Collaborative Verbalized Experience",
+    authors:
+      "Yaochen Zhu, Harald Steck, Dawen Liang, Yinhan He, Nathan Kallus, Jundong Li",
+    venue: "Findings of EMNLP",
+    year: "2025",
+    url: "https://aclanthology.org/2025.findings-emnlp.119.pdf",
+    note:
+      "CRAVE turns historical conversations and user feedback into retrievable verbal experience, rather than treating them as raw few-shot examples or one global set of rules. The idea becomes more interesting in its debater–critic setup: distinct agents retrieve their own preference-oriented experience before arguing over a recommendation. I keep it for this practical view of agent memory as personalized, feedback-grounded, and collaborative.",
+    tags: ["Recommender Systems", "LLM Agents", "Memory"],
+  },
+  {
     title: "Memory Caching: RNNs with Growing Memory",
     authors:
       "Ali Behrouz, Zeman Li, Yuan Deng, Peilin Zhong, Meisam Razaviyayn, Vahab Mirrokni",
