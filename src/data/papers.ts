@@ -128,6 +128,17 @@ export const PAPERS: Paper[] = [
     tags: ["Language Models", "Recommender Systems", "Evaluation"],
   },
   {
+    title: "A Multi-Agent Conversational Recommender System",
+    authors:
+      "Jiabao Fang, Shen Gao, Pengjie Ren, Xiuying Chen, Suzan Verberne, Zhaochun Ren",
+    venue: "arXiv preprint",
+    year: "2024",
+    url: "https://arxiv.org/pdf/2402.01135",
+    note:
+      "MACRS treats a recommendation dialogue as a small team problem: specialized agents propose asking, chatting, and recommending moves, while a planner selects the next response. Its feedback-aware reflection step then turns a user’s reaction into both an updated profile and guidance for the next strategy. I keep it as an early, concrete example of using agent roles to make an LLM recommender less aimless over multiple turns.",
+    tags: ["Recommender Systems", "LLM Agents", "Conversational AI"],
+  },
+  {
     title: "Harnessing the Universal Geometry of Embeddings",
     authors: "Rishi Jha, Collin Zhang, Vitaly Shmatikov, John X. Morris",
     venue: "NeurIPS",
