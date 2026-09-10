@@ -117,6 +117,16 @@ export const PAPERS: Paper[] = [
     tags: ["Information Retrieval", "Recommender Systems", "Personalization"],
   },
   {
+    title: "Training Compute-Optimal Large Language Models",
+    authors: "Jordan Hoffmann et al.",
+    venue: "arXiv preprint",
+    year: "2022",
+    url: "https://arxiv.org/pdf/2203.15556",
+    note:
+      "The Chinchilla result made the scaling question operational: many large language models were not too small, but undertrained. By revisiting the compute-optimal tradeoff, the paper found that parameters and training tokens should scale together; a 70B-parameter model trained on 1.4T tokens beat much larger peers at the same training budget. I keep it as the correction that made data a first-class scaling variable again.",
+    tags: ["Scaling Laws", "Language Models", "Compute"],
+  },
+  {
     title: "Large Language Models as Zero-Shot Conversational Recommenders",
     authors:
       "Zhankui He, Zhouhang Xie, Rahul Jha, Harald Steck, Dawen Liang, Yesu Feng, Bodhisattwa Prasad Majumder, Nathan Kallus, Julian McAuley",
