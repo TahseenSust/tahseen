@@ -171,6 +171,18 @@ export const PAPERS: Paper[] = [
     tags: ["Recommender Systems", "LLM Agents", "Memory"],
   },
   {
+    title:
+      "DualGauge: Automated Joint Security-Functionality Benchmarking of Specification-Only Code Generation by LLMs and Coding Agents",
+    authors:
+      "Rupam Patir, Keyan Guo, Suvadra Barua, Abhijeet Pathak, Dinesh Gudimetla, Jiawei Guo, Hongxin Hu, Haipeng Cai",
+    venue: "arXiv preprint",
+    year: "2025",
+    url: "https://arxiv.org/pdf/2511.20709",
+    note:
+      "DualGauge makes a deceptively important point about coding-model evaluation: passing functional tests is not evidence that generated code is safe. By pairing functional and security tests for the same natural-language specification — and judging runtime behavior rather than outputs alone — it exposes a severe gap in joint success, including for agentic coding systems. I keep it as a reminder that a benchmark should measure the property we actually need, not a convenient proxy for it.",
+    tags: ["Code Generation", "Security", "Evaluation"],
+  },
+  {
     title: "Memory Caching: RNNs with Growing Memory",
     authors:
       "Ali Behrouz, Zeman Li, Yuan Deng, Peilin Zhong, Meisam Razaviyayn, Vahab Mirrokni",
