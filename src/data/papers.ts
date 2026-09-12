@@ -117,6 +117,17 @@ export const PAPERS: Paper[] = [
     tags: ["Information Retrieval", "Recommender Systems", "Personalization"],
   },
   {
+    title: "LoRA: Low-Rank Adaptation of Large Language Models",
+    authors:
+      "Edward Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, Weizhu Chen",
+    venue: "ICLR",
+    year: "2022",
+    url: "https://arxiv.org/pdf/2106.09685",
+    note:
+      "LoRA made adapting large models inexpensive enough to become ordinary practice: freeze the base weights and learn a small low-rank update instead of a full new copy per task. What makes the method unusually practical is that the update can be merged back into the original weights at deployment, preserving inference latency while dramatically reducing training and storage costs. I keep it because it changed fine-tuning from a model-owning operation into a lightweight, shareable layer of adaptation.",
+    tags: ["Parameter-Efficient Fine-Tuning", "Language Models", "Adaptation"],
+  },
+  {
     title: "Training Compute-Optimal Large Language Models",
     authors: "Jordan Hoffmann et al.",
     venue: "arXiv preprint",
