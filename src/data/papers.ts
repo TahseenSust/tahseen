@@ -160,6 +160,17 @@ export const PAPERS: Paper[] = [
     tags: ["Recommender Systems", "LLM Agents", "Conversational AI"],
   },
   {
+    title:
+      "LLM-Based Detection of Tangled Code Changes for Higher-Quality Method-Level Bug Datasets",
+    authors: "Md Nahidul Islam Opu, Shaowei Wang, Shaiful Chowdhury",
+    venue: "arXiv preprint",
+    year: "2025",
+    url: "https://arxiv.org/pdf/2505.08263",
+    note:
+      "A bug-fix commit can contain unrelated refactoring or enhancement work, and treating every changed method as buggy quietly contaminates the datasets used for prediction. This paper uses the joint signal in a commit message and a method-level diff to identify those tangled changes, then shows that filtering them yields cleaner separation between buggy and non-buggy methods. I keep it because data quality in software engineering often depends on understanding the intent behind a change, not merely that a change occurred.",
+    tags: ["Software Engineering", "Bug Prediction", "LLMs"],
+  },
+  {
     title: "Harnessing the Universal Geometry of Embeddings",
     authors: "Rishi Jha, Collin Zhang, Vitaly Shmatikov, John X. Morris",
     venue: "NeurIPS",
