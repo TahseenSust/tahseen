@@ -171,6 +171,18 @@ export const PAPERS: Paper[] = [
   },
   {
     title:
+      "HistoryFinder: Advancing Method-Level Source Code History Generation with Accurate Oracles and Enhanced Algorithm",
+    authors:
+      "Shahidul Islam, Ashik Aowal, Md Sharif Uddin, Shaiful Chowdhury",
+    venue: "arXiv preprint",
+    year: "2025",
+    url: "https://arxiv.org/pdf/2507.14716",
+    note:
+      "HistoryFinder starts with a question that matters as much as its algorithm: can we trust the oracle used to evaluate code-history tools? It builds corrected, expert-validated method-history ground truth and uses it to show that a new tracking approach can improve both accuracy and practical runtime. I keep it because dependable software-repository research begins with measuring historical change correctly — especially when methods are renamed, moved, merged, or refactored.",
+    tags: ["Software Engineering", "Code History", "Evaluation"],
+  },
+  {
+    title:
       "LLM-based Conversational Recommendation Agents with Collaborative Verbalized Experience",
     authors:
       "Yaochen Zhu, Harald Steck, Dawen Liang, Yinhan He, Nathan Kallus, Jundong Li",
