@@ -128,6 +128,16 @@ export const PAPERS: Paper[] = [
     tags: ["Parameter-Efficient Fine-Tuning", "Language Models", "Adaptation"],
   },
   {
+    title: "Training Language Models to Follow Instructions with Human Feedback",
+    authors: "Long Ouyang et al.",
+    venue: "NeurIPS",
+    year: "2022",
+    url: "https://arxiv.org/pdf/2203.02155",
+    note:
+      "InstructGPT showed that a smaller model, once trained to follow human preferences, could be preferred to a much larger base language model. Its recipe — demonstrations for supervised fine-tuning, ranked outputs for a reward model, then reinforcement learning from human feedback — made instruction following a core training objective rather than a prompting trick. I keep it because it marks the shift from models that merely continue text to assistants that are explicitly optimized around a user’s intent.",
+    tags: ["Alignment", "RLHF", "Instruction Following"],
+  },
+  {
     title: "Training Compute-Optimal Large Language Models",
     authors: "Jordan Hoffmann et al.",
     venue: "arXiv preprint",
