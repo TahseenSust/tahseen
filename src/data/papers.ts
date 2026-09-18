@@ -247,4 +247,14 @@ export const PAPERS: Paper[] = [
       "A useful intervention against treating language as the only route to general intelligence. Rather than argue for one definition or architecture, the paper maps the questions visual systems need to answer — spanning video, geometry, generation, continual learning, embodiment, and evaluation — if visual experience is to produce genuinely transferable capabilities. I keep it as an agenda-setting complement to the model papers on this shelf.",
     tags: ["Computer Vision", "Foundation Models", "Visual Intelligence"],
   },
+  {
+    title: "Dream-RSI: Recursive Self-Improvement through Evolving Worlds",
+    authors: "Tong Zheng et al.",
+    venue: "arXiv preprint",
+    year: "2026",
+    url: "https://www.dream-rsi.com/assets/dream-rsi.pdf",
+    note:
+      "Dream-RSI shifts recursive self-improvement away from changing the underlying model and toward improving how an agent explores. Its key move is to treat completed discovery trees as replay simulators: candidate exploration policies can be tested against the search history cheaply, then the strongest policy returns to online work and generates new history. I keep it for that clean loop between experience, offline policy improvement, and more effective discovery across algorithms, math, and GPU kernels.",
+    tags: ["LLM Agents", "Recursive Self-Improvement", "Exploration"],
+  },
 ]
